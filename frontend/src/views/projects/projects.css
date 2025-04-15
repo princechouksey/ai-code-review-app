@@ -1,0 +1,90 @@
+.project-main,
+.project-section {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+
+.project-section {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+
+.project-section>* {
+    height: 100%;
+    flex: 1;
+    border-radius: 0.5rem;
+}
+
+.project-section .chat {
+    background-color: #ededed;
+    position: relative;
+}
+
+.project-section .chat .messages {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 80%;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    padding-bottom: 5rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.project-section .chat .messages::-webkit-scrollbar {
+    display: none;
+}
+
+.project-section .chat .messages .message {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    width: fit-content;
+    background-color: #dedada;
+}
+
+.project-section .chat .input-area {
+    position: absolute;
+    width: 80%;
+    background-color: #d4d4d4;
+    transform: translateX(-50%);
+    left: 50%;
+    border-radius: 0.7rem;
+    bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+}
+
+.project-section .chat .input-area input {
+    padding: 0.5rem 0.7rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.project-section .chat .input-area button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: rgb(52, 51, 51);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-section .code {
+    background-color: #010101;
+}
+
+.project-section .review {
+    background-color: #faece1;
+}
