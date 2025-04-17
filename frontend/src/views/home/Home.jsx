@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     setIsLoading(true);
     axios
-      .get("http://localhost:3000/projects/get-all")
+      .get("https://ai-code-review-app-backend.onrender.com")
       .then((response) => {
         setProjects(response.data.data);
         setIsLoading(false);
