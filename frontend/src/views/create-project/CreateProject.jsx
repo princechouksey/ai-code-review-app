@@ -15,7 +15,7 @@ const CreateProject = () => {
     setIsLoading(true);
     setError("");
 
-    axios.post('http://localhost:3000/projects/create', {
+    axios.post('https://ai-code-review-app-backend.onrender.com', {
       projectName,
       description: projectDescription
     })
