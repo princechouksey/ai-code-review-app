@@ -77,7 +77,7 @@ const Project = () => {
     }, [messages]);
 
     useEffect(() => {
-        const io = SocketIo("localhost:3000", {
+        const io = SocketIo("https://ai-code-review-app-backend.onrender.com", {
             query: {
                 project: params.id
             }
