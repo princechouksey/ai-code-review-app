@@ -48,7 +48,7 @@ const Home = () => {
               <div className="spinner"></div>
               <p>Loading projects...</p>
             </div>
-          ) : projects.length === 0 ? (
+          ) : projects?.length === 0 ? (
             <div className="no-projects">
               <div className="empty-state-icon">📂</div>
               <p>No projects created yet</p>
