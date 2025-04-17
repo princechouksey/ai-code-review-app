@@ -4,7 +4,10 @@ const cors = require('cors')
 
 const app = express();
 
-app.use(cors())
+app.use(cors(
+    origin: "https://ai-code-review-app-frontend.onrender.com/", // your frontend URL
+    credentials: true,
+))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
