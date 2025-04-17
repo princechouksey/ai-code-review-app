@@ -61,7 +61,7 @@ const Home = () => {
             </div>
           ) : (
             <div className="projects">
-              {projects.map((project) => (
+              {projects?.map((project) => (
                 <div
                   key={project._id}
                   onClick={() => {
