@@ -15,7 +15,7 @@ const CreateProject = () => {
     setIsLoading(true);
     setError("");
 
-    axios.post('https://ai-code-review-app-backend.onrender.com', {
+    axios.post('https://ai-code-review-app-backend.onrender.com/projects/create', {
       projectName,
       description: projectDescription
     })
